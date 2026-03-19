@@ -1,0 +1,13 @@
+#!/bin/bash
+TASK_NAME="plain_cgmap_ffr_out"
+DATASET_NAME="plain_cgmap_ffr_out"
+MODEL_NAME="Qwen/Qwen2.5-VL-3B-Instruct"
+LEARNING_RATE=1e-5
+NUM_EPOCHS=3
+OUTPUT_BASE_DIR="experiments/sft/results"
+RUN_NAME="qwen2vl-${TASK_NAME}_sft"
+MAX_PIXELS=90000
+MIN_PIXELS=784
+MODEL_MAX_LENGTH=8192
+SAVE_STEPS=5
+SAVE_TOTAL_LIMIT=12
