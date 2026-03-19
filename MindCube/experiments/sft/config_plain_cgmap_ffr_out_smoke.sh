@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Smoke config for CPU-first validation / quick GPU sanity checks
+TASK_NAME="plain_cgmap_ffr_out_smoke"
+DATASET_NAME="plain_cgmap_ffr_out_smoke"
+MODEL_NAME="Qwen/Qwen2.5-VL-3B-Instruct"
+
+LEARNING_RATE=1e-5
+NUM_EPOCHS=1
+MAX_STEPS=2
+
+OUTPUT_BASE_DIR="checkpoints/sft/smoke"
+RUN_NAME="qwen2vl-${TASK_NAME}_smoke"
+
+MAX_PIXELS=90000
+MIN_PIXELS=784
+MODEL_MAX_LENGTH=8192
+SAVE_STEPS=1
+SAVE_TOTAL_LIMIT=4
+
+# Optional overrides
+# REPORT_TO="wandb"
+# USE_BF16=false
